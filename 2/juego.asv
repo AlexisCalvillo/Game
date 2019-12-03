@@ -36,10 +36,7 @@ coalAc=0;
 sprintf('Vector de pagos');
 vecPag
 sprintf('Shapley');
-[vecPagSh,matr] = vecPagShap(VecVot,nJugTot,votosMin);
-vecPagSh
-sprintf('Matriz');
-matr
+vecPagSh =
 pJuegoMax = max(pCoalN);
 
 

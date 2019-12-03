@@ -1,0 +1,22 @@
+function [vecPag, matr] = vecPagShap(vecVot,nJug, votMin)
+matr=zeros(posib+1,2*nJug+1);
+vecPos=[1:nJug];
+permutaciones=perms(vecPos);
+vecCant=zeros(1,nJug);
+posib=factorial(nJug);
+matr(1,1:nJug)=vecPag;
+matr
+
+for i=1:posib
+    j=1;
+    fin=false;
+    while(~fin)
+        if(sum(vecVot(permutaciones(i,1:j)))>votMin)
+            fin=true;
+            vecCant(permutaciones(i,j))=vecCant(permutaciones(i,j))+1;
+        end
+        j=j+1;
+    end
+end
+vecPag=vecCant./posib;
+end
