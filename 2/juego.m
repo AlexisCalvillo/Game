@@ -1,10 +1,10 @@
 clear all;
-nJugTot=3;
-votosMin=20;
 close all;
 vecPagSh=[];
 %Genera un juego aleatorio 
-VecVot=generaPartidas(nJugTot,3, 15);
+%VecVot=generaPartidas(nJugTot,3, 15);
+%Ejemplos
+VecVot=[5 5 5]; votosMin=floor(mean(VecVot))+1; nJugTot=length(VecVot);
 %Genera un vector de pagos aleatorio
 vecPag= pagoAleatorio(nJugTot);
 %Matriz de combinaciones

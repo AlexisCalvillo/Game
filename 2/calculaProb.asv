@@ -26,9 +26,8 @@ else
     verticesN=vertices;
     verticesN(1:nJug,1)=vecAuxp;
     verticesN(2:nJug,2:nJug)=IdMen;
-    %Volumen del simplejo dado el pago correspondiente
+    %
     volN=volumenCM(verticesN);
-    %Probabilidad del jugador de cerrar o entrar
     prob=volN/volTotal;
 end
 end

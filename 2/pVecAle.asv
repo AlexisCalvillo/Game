@@ -28,9 +28,7 @@ coalAc=0;
             coalAc=coalAc+1;
             %Probabilidad de la j-ésima coalición con i jugadores
             pCol(j)= probCo(i,vecPag(find(MColN(j,:))));
-            coal(coalAc,:)=[i,pCol(j),MColN(j,:)]; %nJug, pCol y coalición
-            %Si alguno llega con 1 solo jugador entonces su probabilidad es
-            %1.
+            coal(coalAc,:)=[i,pCol(j),MColN(j,:)]; %nJug, pCol y coalici
             if(any(pCol==1))
                 pCoalN(i) = 1;
             else

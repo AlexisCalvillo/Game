@@ -11,10 +11,11 @@ for i=1:posib
     j=1;
     fin=false;
     while(~fin && j<=nJug)
-        if(sum(vecVot(permutaciones(i,1:j)))>=votMin)
+        sumaVot=sum(vecVot(permutaciones(i,1:j)));
+        if(sumaVot>=votMin)
             fin=true;   
             vecCant(permutaciones(i,j))=vecCant(permutaciones(i ,j))+1;
-            matr(i+1,nJug+1+j)=1;
+            matr(i+1,nJug+1+permutaciones(i,j))=1;
         else
             matr(i+1,nJug+1+j)=0;
         end

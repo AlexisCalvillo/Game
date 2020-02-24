@@ -14,7 +14,7 @@ MCombVal=MComb*(VecVot')>=Vmin;
         indCombNEl=(sum(MComb')==(i));
         indMat=MCombVal.*indCombNEl';
         indMat=find(indMat);
-        %Coaliciones válidas de n-i+1 elementos
+        %Coaliciones válidas de i elementos
         MColN=MComb(indMat,:);
         %Distribucion jugador (por simetría sólo necesitamos un caso para
         %cada n
